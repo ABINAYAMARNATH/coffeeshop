@@ -1,0 +1,421 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6.5rem;
+ }
+ ::-webkit-scrollbar{
+    height: .5rem;
+    width: 1rem;
+ }
+ ::-webkit-scrollbar-track{
+    background-color:transparent;
+ }
+ ::-webkit-scrollbar-thumb{
+    background-color:rgba(142, 89, 51, 0.904);
+ }
+.container{
+margin: 4px;
+}
+button{
+    background-color:rgb(68, 33, 5);
+    border: none;
+}
+button a:hover{
+       color: whitesmoke;
+}
+.home{
+    width: 100%;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.355)50%,rgba(0, 0, 0, 0.349)50%) ,url(images/bean.jfif);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;}
+    .home h1{
+        color:#fff;
+        font-size:110px;
+        margin-top: 50%;
+        font-family:fantasy;
+    }
+    .home p{
+        color: rgb(6, 6, 6);
+        font-size: 30px;
+        font-style: italic;
+        margin-left: 150px;
+    }
+    .home button{
+        width: 100px;
+        height: 50px;
+        padding:10px;
+        border-radius: 10px;
+        border: none;
+        background-color: rgba(142, 89, 51, 0.904);
+        margin-left: 30%;
+    }
+    .home button a{
+        color: aliceblue;
+        text-decoration: none;
+        text-align: center;
+    }
+    .home button:hover{
+        background-color: rgba(240, 248, 255, 0.558);
+    }
+    .home img{
+        margin-top: 25%;
+        margin-left: 20px;
+    }
+    .image .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 25%;
+        margin-left: 41px;
+        width: 75%;
+        height: 75%;
+        background: rgba(0, 0, 0, 0.405);
+        color:rgba(255, 255, 255, 0.911);;
+        font-family: 'Quicksand',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    .image-overlay:hover{
+        opacity:1;
+    }
+    .image-overlay >*{
+        transform: translateY(20px);
+        transition: transform 1.3s;
+    }
+    .image-overlay:hover >*{
+        transform: translateY(0);
+    }
+    .about{
+        width: 100%;
+        height: 80vh;
+        background-color: rgba(130, 79, 43, 0.755);
+    }
+    .about h1{
+        text-align: center;
+        text-decoration: underline; 
+        margin-top: 20px;
+    }
+    .about img{
+        width: 400px;
+        height: 350px;
+        margin-top: 15%;
+        margin-left: 20%;
+    }
+    .about h2{
+        margin-top: 20%;
+        margin-left: 20px;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        text-transform: capitalize;
+    }
+    .about h2:hover{
+        color: aliceblue;
+        transition: 0.55s;
+    }
+    .about p{
+        margin-left: 20px;
+        font-size: 20px;
+    }
+    .menu{
+        width: 100%;
+        height: 100vh;
+        background-image: linear-gradient(rgba(0,0,0,.355)50%,rgba(0,0,0,.355)50%),url(images/coffe\ bean.png );
+        background-position: center;
+        background-size: cover;
+    }
+    .menu:hover{
+        transition: 0.25s ease;
+        transform: translateY(0,0,0,03.3);
+    }
+    .menu h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .menu img{
+        width: 250px;
+        height: 250px;
+        margin: 15px;
+        box-shadow: 50px;
+    }
+    .menu h4{
+        text-align: center;
+        margin-right: 50px;
+        color: #fff;
+    }
+    .gallery{
+        width: 100%;
+        height: 100vh;
+        background-color: rgba(130, 79, 43, 0.755);
+    }
+    .gallery h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .gallery img{
+        width: 300px;
+        height: 300px;
+        margin: 15px;
+        border-radius: 10px;
+    }
+    .imag .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 15px;
+        margin-left: 30px;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.405);
+        color:rgba(255, 255, 255, 0.911);;
+        font-family: 'Quicksand',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        opacity: 0;
+        transition: opacity 0.25s;
+    }
+    .imag .image-overlay:hover{
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.788);
+        background-color: rgba(255, 255, 255, 0.558);
+    }
+    .image1 .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top:59%;
+        margin-left: 30px;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.405);
+        color:rgba(255, 255, 255, 0.911);;
+        font-family: 'Quicksand',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        opacity:0;
+        transition: opacity 0.25s;
+    }
+    .image1 .image-overlay:hover{
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.788);
+        background-color: rgba(255, 255, 255, 0.558);
+    }
+    .image2 .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top: 15px;
+        margin-left: 30px;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.405);
+        color:rgba(255, 255, 255, 0.911);;
+        font-family: 'Quicksand',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        opacity:0;
+        transition: opacity 0.25s;
+    }
+    .image2 .image-overlay:hover{
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.788);
+        background-color: rgba(255, 255, 255, 0.558);
+    }
+    .image3 .image-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin-top:59%;
+        margin-left: 30px;
+        border-radius: 10px;
+        width: 300px;
+        height: 300px;
+        background: rgba(0, 0, 0, 0.405);
+        color:rgba(255, 255, 255, 0.911);;
+        font-family: 'Quicksand',sans-serif;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 50px;
+        opacity:0;
+        transition: opacity 0.25s;
+    }
+    .image3 .image-overlay:hover{
+        opacity: 1;
+        color: rgba(0, 0, 0, 0.788);
+        background-color: rgba(255, 255, 255, 0.558);
+    }
+    
+    .details{
+        width: 100%;
+        height: 100vh;
+background-image:linear-gradient(rgba(0,0,0,.255)50%,rgba(0,0,0,.255)50%),url(images/glary2.jfif);        font-size: 18px;
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+        color:rgb(13, 0, 0) ;
+        text-transform: capitalize;
+        background-position: center;
+        background-size: cover;
+    }
+    .details h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .details img{
+        width: 300px;
+        height: 300px;
+        margin: 20px;
+        padding: 20px;
+        border: 20px;
+    }
+    .details ul{
+        list-style: none;
+        margin-left: 50px;
+        display: inline-flexbox;
+    }
+    .contact{
+        width: 100%;
+        background-color: rgba(130, 79, 43, 0.755);
+        height: 50vh;
+    }
+    .contact h1{
+        text-align: center;
+        text-decoration: underline;
+    }
+    .contact a{
+        color: rgba(0, 0, 0, 0.612);
+    }
+    .contact a:hover{
+        color: aliceblue;
+    }
+    .contact .progress-bar{
+      background-color: rgb(177, 95, 36);
+    }
+
+
+
+
+    /* media query*/
+    @media  screen and (max-width:991px){
+        html{
+font-size: 55%;
+        }
+       .navbar-header{
+           size: 50%;
+       }
+
+    }
+        
+    
+
+    @media screen and (max-width:940px){
+        ul li a{
+            background-color: rgba(68, 33, 5, 0.758);
+            text-align: center;         
+            transform: translatez(100%);
+        }
+        ul li button{
+            width: 100%;
+            background-color:rgba(68, 33, 5, 0.756) ;
+        }
+    .home{
+        height: 50%;
+    }
+    .home h1,p{
+        margin-top: 150px;
+    }
+    .home button{
+        margin-left: 37%;
+    }
+    .image .image-overlay{
+        margin-left: 20px;
+        width: 90%;
+        height: 72%;
+        margin-bottom: 10%;
+    }
+    .home img{
+        margin-bottom: 50px;
+        margin-left:-0.015px;
+    }
+    .about{
+        height: 30%;
+    }
+    .about .container{
+        height: 130vh;
+    }
+    .about img{
+        align-items: center;
+        margin: 30px 10px 0 50px;
+        width: 80%;
+    }
+    .about .about-content{
+        width: 70%;
+        padding-left: 70px;
+        margin-bottom: 500px;
+    }
+    .menu{
+        height: 100%;
+    }
+    .menu img{
+        margin-left: 100px;
+    }
+    .menu h4{
+        align-items: center;
+    }
+    .gallery{
+        height: 100%;
+    }
+    .gallery .imag,.image1,.image2,.image3{
+        margin-left: 50px;
+    }
+    .gallery .image1 .image-overlay{
+        margin-top: 347px;
+        margin-left: 78px;
+    }
+    .gallery .image3 .image-overlay{
+        margin-top: 345px;
+        margin-left:78px ;
+    }
+    .gallery .imag .image-overlay{
+        margin-left: 80px;
+    }
+    .gallery .image2 .image-overlay{
+       margin-left:80px ;
+    }
+    .details{
+        height: 100%;
+    }
+    .details img{
+        margin-left: 75PX;
+    }
+    .details p{
+        text-align: center;
+    }
+    .contact{
+        height: 100%;
+        text-align: center;
+    }
+
+    }
